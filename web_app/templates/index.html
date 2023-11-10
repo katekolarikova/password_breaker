@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password breaker</title>
+</head>
+<body>
+    <h1>Password breaker</h1>
+    <form method="post" id="password_form">
+        <label for="user_input">Enter a string:</label>
+        <input type="text" id="user_input" name="user_input">
+        <button type="submit" id="check_button">Check</button>
+    </form>
+    <div>
+        {% if match_status %}
+            <p id="response_status">Match Status: {{ match_status }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
